@@ -25,6 +25,8 @@ public class LoginTest {
             LogUtils.Info("Test Started");
             new LoginPage(driver).FillEmailField("wesam@almedadsoft.com").FillPasswordField("as").clickOnLoginButton().AssertErrorPassword();
           }
+
+
     @AfterMethod
     public void TearDown(){
         driver.quit();

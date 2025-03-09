@@ -1,6 +1,7 @@
 package Com.Tasks.Driver;
 
 import Com.Tasks.Utils.ClassOption;
+import io.qameta.allure.Step;
 import org.checkerframework.checker.units.qual.C;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BrowserFactor {
       private BrowserFactor(){};
+      @Step("Get Browser")
       public static WebDriver GetBrowser(String BrowserName) {
           switch(BrowserName.toLowerCase()){
               case "chrome":
